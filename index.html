@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f9">
+  <meta name="description" content="APEX TADERS HUB — a live Deriv trading dashboard with streaming market data and account-connected options trading.">
+  <title>APEX TADERS HUB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <section class="landing-page" id="landing-page" aria-label="APEX TADERS HUB homepage">
+    <header class="landing-header">
+      <a class="landing-brand" href="#" aria-label="APEX TADERS HUB">
+        <span class="landing-brand-mark" aria-hidden="true">⌁</span>
+        <span><strong>APEX</strong><small>TRADERS HUB</small></span>
+      </a>
+      <nav class="landing-nav" aria-label="Homepage navigation">
+        <button type="button">Home</button>
+        <button type="button">Markets</button>
+        <button type="button">Products</button>
+        <button type="button">About</button>
+      </nav>
+      <div class="landing-actions">
+        <button class="landing-login" id="landing-login" type="button">Login</button>
+        <a class="landing-open-account" href="https://home.deriv.com/dashboard/signup?lang=en" target="_blank" rel="noopener noreferrer">Open Account</a>
+      </div>
+    </header>
+
+    <main class="landing-main">
+      <section class="landing-hero">
+        <div class="landing-map" aria-hidden="true"></div>
+        <div class="landing-heading">
+          <p class="landing-eyebrow"><span></span>MARKETS · INSIGHTS · EXECUTION</p>
+          <h1>Master the Markets with Apex Traders Hub:<br>The Home of Derivative Trading</h1>
+          <p>Explore live markets and build your trading workflow with APEX.</p>
+        </div>
+        <div class="landing-showcase">
+          <article class="landing-chart-card" aria-label="Illustrative market chart">
+            <div class="landing-chart-toolbar"><strong>GLOBAL 50 INDEX · 1D</strong><span>ILLUSTRATIVE PREVIEW</span></div>
+            <div class="landing-chart-summary"><span>Sample market data · not live quotes</span><strong>13,968.02 <small>+126.40 (+0.92%)</small></strong></div>
+            <div class="landing-chart-plot">
+              <div class="landing-chart-grid" aria-hidden="true"></div>
+              <svg viewBox="0 0 760 280" preserveAspectRatio="none" role="img" aria-label="Decorative candlestick market chart">
+                <defs><linearGradient id="landing-chart-fill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#20c98a" stop-opacity=".24"/><stop offset="1" stop-color="#20c98a" stop-opacity="0"/></linearGradient></defs>
+                <path class="landing-chart-area" d="M0 204 L35 193 66 161 97 178 130 136 160 147 191 119 224 155 258 188 291 165 321 109 353 120 387 96 417 132 450 78 480 96 512 69 544 102 575 54 608 77 638 45 671 62 703 31 733 48 760 22 V280 H0Z"/>
+                <path class="landing-chart-average" d="M0 216 C90 202 108 148 173 162 S280 221 344 161 S420 142 462 121 S530 149 586 101 S663 112 760 52"/>
+                <g class="landing-candles">
+                  <path d="M28 178v49m-9-33h18v21H19z M66 142v50m-9-32h18v18H57z M102 155v44m-9-20h18v22H93z M138 105v53m-9-32h18v20h-18z M175 118v47m-9-28h18v17h-18z M210 91v42m-9-27h18v18h-18z M245 129v48m-9-33h18v21h-18z M280 163v52m-9-31h18v21h-18z M316 132v48m-9-36h18v23h-18z M351 78v62m-9-42h18v29h-18z M386 86v43m-9-28h18v20h-18z M421 57v55m-9-41h18v24h-18z M456 99v49m-9-35h18v19h-18z M491 44v56m-9-41h18v28h-18z M526 61v45m-9-30h18v19h-18z M561 38v48m-9-35h18v23h-18z M596 25v53m-9-38h18v26h-18z M631 49v44m-9-29h18v18h-18z M666 20v47m-9-34h18v23h-18z M701 9v43m-9-30h18v19h-18z M736 0v48m-9-34h18v23h-18z"/>
+                </g>
+              </svg>
+              <span class="landing-price-tag">13,968.02</span>
+            </div>
+            <div class="landing-chart-axis"><span>09:00</span><span>12:00</span><span>15:00</span><span>18:00</span><span>Time (UTC)</span></div>
+          </article>
+          <article class="landing-markets-card">
+            <h2>Key Derivative Markets</h2>
+            <div class="landing-market-tabs" role="tablist" aria-label="Market categories">
+              <button class="selected" type="button" role="tab" aria-selected="true">Options</button>
+              <button type="button" role="tab" aria-selected="false">Futures</button>
+              <button type="button" role="tab" aria-selected="false">Forex</button>
+              <button type="button" role="tab" aria-selected="false">Cryptos</button>
+            </div>
+            <div class="landing-market-grid">
+              <article><strong>Options</strong><small>Example</small><span class="landing-market-move">0.28 <b>↗ 0.23</b></span><small>Price</small><strong>$533.27</strong><button type="button">Trade Now</button></article>
+              <article><strong>Futures</strong><small>Example</small><span class="landing-market-move">0.29 <b>↗ 0.35</b></span><small>Trade</small><strong>$191.60</strong><button type="button">Trade Now</button></article>
+              <article><strong>Forex</strong><small>Example</small><span class="landing-market-move">0.25 <b>↗ 0.56</b></span><small>Price</small><strong>$7,207.38</strong><button type="button">Trade Now</button></article>
+              <article><strong>Cryptos</strong><small>Example</small><span class="landing-market-move">0.75 <b>↗ 0.15</b></span><small>Trade</small><strong>$1,381.85</strong><button type="button">Trade Now</button></article>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="landing-features" aria-label="Platform features">
+        <article><span aria-hidden="true">▥</span><div><h2>Advanced Tools<br>&amp; Analytics</h2><p>Advanced tools and analytics to help you evaluate market activity and your trading platform.</p></div></article>
+        <article><span aria-hidden="true">▤</span><div><h2>Expert Insights<br>&amp; Education</h2><p>Explore insights and educational resources to support your market research and decision-making.</p></div></article>
+        <article><span aria-hidden="true">♧</span><div><h2>Tight Spreads<br>&amp; Low Fees</h2><p>Review pricing and contract details before connecting an account and placing a trade.</p></div></article>
+      </section>
+    </main>
+    <footer class="landing-footer">
+      <div><strong>About</strong><span>APEX Traders Hub</span><span>Market dashboard</span></div>
+      <div><strong>Products</strong><span>Options</span><span>Derived markets</span></div>
+      <p>© 2026 APEX Traders Hub. Market data and account services are provided by Deriv.<br>Trading involves risk. Please review contract details before trading.</p>
+    </footer>
+  </section>
+
+  <div class="app-shell" id="dashboard-app" hidden>
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#overview" aria-label="APEX TADERS HUB home">
+        <span class="brand-mark">A<span>.</span></span>
+        <span class="brand-word">APEX TADERS HUB</span>
+      </a>
+
+      <div class="sidebar-label">Workspace</div>
+      <nav class="side-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#overview"><span class="nav-icon">◫</span>Overview</a>
+        <a class="nav-link" href="#markets"><span class="nav-icon">◈</span>Markets</a>
+        <a class="nav-link" href="#portfolio"><span class="nav-icon">▤</span>Portfolio</a>
+        <a class="nav-link" href="#history"><span class="nav-icon">◷</span>Trade history</a>
+      </nav>
+
+      <div class="sidebar-label tools-label">Tools</div>
+      <nav class="side-nav" aria-label="Trading tools">
+        <a class="nav-link" href="#analytics"><span class="nav-icon">⌁</span>Analytics</a>
+        <a class="nav-link" href="#markets"><span class="nav-icon">☆</span>Watchlist</a>
+        <a class="nav-link" href="#bot-hub"><span class="nav-icon">⚙</span>Bot Hub</a>
+      </nav>
+
+      <div class="sidebar-spacer"></div>
+      <div class="sidebar-note">
+        <div class="note-icon">✳</div>
+        <strong>Live Deriv market data</strong>
+        <p>Quotes stream from Deriv. Trading requires a connected account.</p>
+        <a href="#quick-trade">Open trading panel <span>↗</span></a>
+      </div>
+      <button class="profile-button" type="button" aria-label="Profile: Jordan Davis">
+        <span class="avatar">JD</span>
+        <span class="profile-copy"><strong>Jordan Davis</strong><small>Personal account</small></span>
+        <span class="profile-more">···</span>
+      </button>
+    </aside>
+
+    <main class="main-content" id="overview">
+      <header class="topbar">
+        <button class="icon-button menu-button" id="menu-toggle" type="button" aria-label="Toggle menu">☰</button>
+        <div class="breadcrumb"><span>Workspace</span><i>/</i><strong>Overview</strong></div>
+        <div class="topbar-actions">
+          <span class="market-status" id="feed-status"><span class="status-dot"></span>Connecting to Deriv</span>
+          <button class="icon-button notification-button" id="notification-button" type="button" aria-label="Notifications">♧<span class="notification-dot"></span></button>
+          <button class="account-switch" id="account-switch" type="button"><span class="account-icon">◉</span><span id="account-label">Connect account</span><span class="chevron">⌄</span></button>
+        </div>
+      </header>
+
+      <div class="dashboard">
+        <section class="welcome-row">
+          <div>
+            <p class="eyebrow" id="welcome-date">MONDAY, NOVEMBER 09, 2026 <span class="eyebrow-divider">·</span> GOOD AFTERNOON</p>
+            <h1>Welcome back, Jordan <span class="wave">✦</span></h1>
+            <p class="welcome-subtitle">Here’s what’s happening with your markets today.</p>
+          </div>
+          <button class="button button-outline" id="export-report" type="button"><span>⇩</span> Export report</button>
+        </section>
+
+        <section class="stats-grid" aria-label="Account overview">
+          <article class="stat-card">
+            <div class="stat-top"><span>Account balance</span><span class="stat-icon mint">◉</span></div>
+            <div class="stat-value" id="balance-value">—</div>
+            <div class="stat-meta"><span class="meta-pill neutral-pill" id="balance-account-type">Not connected</span><span id="balance-currency">Connect an account</span></div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-top"><span>Today's P&amp;L</span><span class="stat-icon green">↗</span></div>
+            <div class="stat-value" id="pnl-value">—</div>
+            <div class="stat-meta"><span>Unavailable</span><span>account history required</span></div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-top"><span>Active positions</span><span class="stat-icon violet">⌁</span></div>
+            <div class="stat-value" id="position-count">0 positions</div>
+            <div class="stat-meta"><span>Connect an account to view contracts</span></div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-top"><span>Win rate</span><span class="stat-icon amber">◎</span></div>
+            <div class="stat-value">—</div>
+            <div class="stat-meta"><span>Unavailable</span><span>account history required</span></div>
+          </article>
+        </section>
+
+        <section class="primary-grid" aria-label="Trading workspace">
+          <article class="panel chart-panel" id="analytics">
+            <div class="panel-heading chart-heading">
+              <div class="market-title">
+                <span class="market-symbol gold-symbol" id="chart-symbol">Au</span>
+                <div><h2 id="chart-market">Gold/USD</h2><p id="chart-category">Derived · Metals</p></div>
+                <span class="open-badge" id="symbol-market-status"><span class="open-indicator"></span><span id="symbol-market-status-label">Checking</span></span>
+              </div>
+              <button class="icon-button more-button" type="button" aria-label="More chart options">···</button>
+            </div>
+            <div class="price-summary">
+              <strong id="chart-price">Connecting…</strong>
+              <span id="chart-change">—</span>
+              <small id="quote-label">Waiting for live ticks</small>
+            </div>
+            <div class="chart-toolbar">
+              <div class="timeframes" role="group" aria-label="Chart timeframe">
+                <button type="button" data-timeframe="1H">1H</button>
+                <button type="button" data-timeframe="4H">4H</button>
+                <button type="button" data-timeframe="1D">1D</button>
+                <button type="button" data-timeframe="1W">1W</button>
+                <button class="selected" type="button" data-timeframe="1M">1M</button>
+              </div>
+              <div class="chart-actions">
+                <button class="chart-type-button" type="button" aria-label="Chart type">▥ <span>Area</span>⌄</button>
+                <button class="icon-button expand-button" type="button" aria-label="Expand chart" id="expand-chart">⛶</button>
+              </div>
+            </div>
+            <div class="chart-wrap" role="img" aria-label="Live Deriv price chart">
+              <div class="y-axis" aria-hidden="true"><span>—</span><span>—</span><span>—</span><span>—</span><span>—</span></div>
+              <svg class="price-chart" viewBox="0 0 760 244" preserveAspectRatio="none" aria-hidden="true">
+                <defs>
+                  <linearGradient id="chart-fill" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#13a98c" stop-opacity=".2"/><stop offset="100%" stop-color="#13a98c" stop-opacity="0"/></linearGradient>
+                </defs>
+                <g class="grid-lines"><line x1="0" y1="14" x2="760" y2="14"/><line x1="0" y1="67" x2="760" y2="67"/><line x1="0" y1="120" x2="760" y2="120"/><line x1="0" y1="173" x2="760" y2="173"/><line x1="0" y1="226" x2="760" y2="226"/></g>
+                <path id="chart-area" d=""/>
+                <path id="chart-line" d=""/>
+                <line class="crosshair" x1="0" y1="48" x2="760" y2="48"/>
+                <circle id="chart-point" cx="760" cy="20" r="4" hidden/>
+              </svg>
+              <span class="live-price-tag" id="chart-price-tag" hidden></span>
+            </div>
+            <div class="x-axis" aria-hidden="true"><span>10:00</span><span>11:00</span><span>12:00</span><span>13:00</span><span>14:00</span><span>15:00</span></div>
+            <div class="chart-footnote"><span><span class="info-dot">i</span> Live Deriv public tick feed</span><span id="tick-updated">Connecting…</span></div>
+            <section class="digit-monitor" aria-labelledby="digit-monitor-title">
+              <div class="digit-monitor-heading">
+                <div><h4 id="digit-monitor-title">Live digit distribution</h4><p>Last-digit frequency in recent ticks · descriptive, not predictive</p></div>
+                <label class="digit-market-picker"><span>Market</span><select id="bot-digit-market" aria-label="Market for digit distribution"><option value="">Scan markets to begin</option></select></label>
+              </div>
+              <div class="digit-grid" id="bot-digit-grid" role="list" aria-label="Frequency of last digits from zero to nine"></div>
+              <div class="digit-flow-heading"><span>Recent digit flow</span><span id="bot-digit-flow-meta">Waiting for tick history</span></div>
+              <div class="digit-flow-wrap" id="bot-digit-flow" role="img" aria-label="Recent last digits moving through the live tick cursor">
+                <div class="digit-flow-track" id="bot-digit-flow-track"></div>
+                <span class="digit-flow-cursor" aria-hidden="true"><i></i><small>CURSOR</small></span>
+              </div>
+              <div class="digit-monitor-foot"><span>● Latest live tick</span><span id="bot-digit-sample-size">0 ticks sampled</span></div>
+            </section>
+          </article>
+
+          <article class="panel trade-panel" id="quick-trade">
+            <div class="panel-heading trade-heading">
+              <div><h2>Quick trade</h2><p>Select a market and contract</p></div>
+              <span class="demo-badge" id="account-mode-badge">NOT CONNECTED</span>
+            </div>
+            <form id="trade-form">
+              <label class="field-label" for="market-select">Market</label>
+              <div class="select-wrap"><select id="market-select" name="market" required><option value="">Loading Deriv markets…</option></select><span>⌄</span></div>
+              <div class="field-label contract-label"><label for="contract-select">Contract type</label><button type="button" class="help-button" title="Only contract types currently offered for the selected market are shown.">i</button></div>
+              <div class="select-wrap"><select id="contract-select" name="contract" required disabled><option value="">Loading available contracts…</option></select><span>⌄</span></div>
+              <div class="trade-parameters" id="trade-parameters">
+                <label class="field-label" id="duration-label" for="duration-input">Duration</label>
+                <div class="parameter-row" id="duration-row">
+                  <input id="duration-input" type="number" min="1" value="5" required>
+                  <select id="duration-unit" aria-label="Duration unit"><option value="t">ticks</option><option value="s">seconds</option><option value="m">minutes</option><option value="h">hours</option><option value="d">days</option></select>
+                </div>
+                <label class="field-label barrier-label" id="barrier-label" for="barrier-input" hidden>Last digit (0–9)</label>
+                <input class="barrier-input" id="barrier-input" type="number" min="0" max="9" value="5" inputmode="numeric" hidden>
+                <label class="field-label barrier-label" id="barrier2-label" for="barrier2-input" hidden>Second barrier</label>
+                <input class="barrier-input" id="barrier2-input" type="number" step="any" hidden>
+                <label class="field-label barrier-label" id="multiplier-label" for="multiplier-input" hidden>Multiplier</label>
+                <select class="barrier-input" id="multiplier-input" hidden></select>
+                <label class="field-label barrier-label" id="cancellation-label" for="cancellation-input" hidden>Cancellation</label>
+                <select class="barrier-input" id="cancellation-input" hidden></select>
+                <label class="field-label barrier-label" id="growth-rate-label" for="growth-rate-input" hidden>Accumulator growth rate</label>
+                <select class="barrier-input" id="growth-rate-input" hidden></select>
+                <label class="field-label barrier-label" id="selected-tick-label" for="selected-tick-input" hidden>Predicted tick number</label>
+                <input class="barrier-input" id="selected-tick-input" type="number" min="1" step="1" value="1" hidden>
+              </div>
+              <label class="field-label stake-label" for="stake-input">Stake amount</label>
+              <div class="stake-input-wrap"><span id="currency-symbol">$</span><input id="stake-input" name="stake" type="number" min="0.01" step="any" value="10" inputmode="decimal" aria-label="Stake amount"><span class="currency-code" id="currency-code">USD</span></div>
+              <div class="stake-presets" aria-label="Stake amount presets">
+                <button type="button" data-stake="5">$5</button><button type="button" class="preset-active" data-stake="10">$10</button><button type="button" data-stake="25">$25</button><button type="button" data-stake="50">$50</button>
+              </div>
+              <div class="payout-row"><span>Estimated payout <button type="button" class="help-button" title="The live proposal will show the actual price and payout before you confirm.">i</button></span><strong id="potential-payout">Connect to request quote</strong></div>
+              <button class="direction-button rise-button trade-submit" type="submit" id="trade-submit" disabled><span>↗</span><span><strong>Connect to trade</strong><small>Review the live proposal first</small></span></button>
+              <p class="demo-disclaimer"><span>ⓘ</span><span id="trade-disclaimer">Live market data. Connect a Deriv demo or real account to trade.</span></p>
+            </form>
+          </article>
+        </section>
+
+        <section class="secondary-grid">
+          <article class="panel market-panel" id="markets">
+            <div class="panel-heading">
+              <div><h2>Market watch</h2><p>Keep an eye on your favorites</p></div>
+              <button class="text-button" type="button" id="view-markets">View all <span>→</span></button>
+            </div>
+            <div class="market-table"><p class="feed-placeholder">Loading live Deriv markets…</p></div>
+          </article>
+
+          <article class="panel positions-panel" id="portfolio">
+            <div class="panel-heading">
+              <div><h2>Active positions</h2><p>Your open demo contracts</p></div>
+              <a class="text-button" href="#history">View all <span>→</span></a>
+            </div>
+            <div class="position-list" id="position-list">
+              <p class="empty-positions">Connect a Deriv account to load positions.</p>
+            </div>
+          </article>
+        </section>
+
+        <section class="panel bot-hub-panel" id="bot-hub">
+          <div class="panel-heading bot-hub-heading">
+            <div><p class="eyebrow">AUTOMATION WORKSPACE</p><h2>Bot Hub</h2><p>Load and manage trading bots connected to your Deriv account.</p></div>
+          </div>
+          <article class="bot-card">
+            <div class="bot-card-heading">
+              <div><span class="bot-type-tag">DIGIT STRATEGY</span><h3>Even / Odd scanner</h3><p>Compares recent last-digit frequencies across open Volatility markets.</p></div>
+              <span class="bot-icon">⌁</span>
+            </div>
+            <section class="bot-builder" aria-labelledby="bot-builder-title">
+              <div class="bot-builder-heading">
+                <div><span class="bot-type-tag">VISUAL STRATEGY</span><h4 id="bot-builder-title">Bot Builder</h4><p>Assemble the flow, set trade rules, then run it on your connected Deriv account.</p></div>
+                <span class="builder-ready" id="bot-builder-status">Strategy ready</span>
+              </div>
+              <div class="builder-toolbar">
+                <button class="builder-quick-button" id="builder-quick" type="button">Quick strategy</button>
+                <div class="builder-toolbar-tools">
+                  <button class="builder-toolbar-button" id="builder-reset" type="button" aria-label="Clear strategy" title="Clear strategy">↻<span>Clear</span></button>
+                  <button class="builder-toolbar-button" id="bot-scan" type="button" title="Scan Volatility markets">⌕<span>Scan</span></button>
+                  <span class="builder-toolbar-divider"></span>
+                  <span class="builder-toolbar-caption">Drag blocks to reorder</span>
+                </div>
+              </div>
+              <div class="builder-layout">
+                <aside class="builder-toolbox" aria-label="Strategy block toolbox">
+                  <div class="builder-toolbox-heading"><strong>Blocks menu</strong><span>STRATEGY</span></div>
+                  <label class="builder-search"><span aria-hidden="true">⌕</span><input id="builder-search" type="search" placeholder="Search blocks" aria-label="Search strategy blocks"></label>
+                  <div class="builder-category-title">Trade parameters</div>
+                  <button type="button" class="builder-tool" data-builder-block="market"><span class="builder-tool-icon market-block-icon">⌕</span><span><b>Market scan</b><small>Find a Volatility market</small></span><span class="builder-add">+</span></button>
+                  <div class="builder-category-title">Purchase conditions</div>
+                  <button type="button" class="builder-tool" data-builder-block="condition"><span class="builder-tool-icon condition-block-icon">◉</span><span><b>Even / Odd rule</b><small>Check recent digit frequency</small></span><span class="builder-add">+</span></button>
+                  <button type="button" class="builder-tool" data-builder-block="trade"><span class="builder-tool-icon trade-block-icon">↗</span><span><b>Purchase contract</b><small>Buy the selected digit</small></span><span class="builder-add">+</span></button>
+                  <div class="builder-category-title">Sell &amp; restart conditions</div>
+                  <button type="button" class="builder-tool" data-builder-block="risk"><span class="builder-tool-icon risk-block-icon">⛨</span><span><b>Stop conditions</b><small>Profit, loss and trade limits</small></span><span class="builder-add">+</span></button>
+                </aside>
+                <div class="builder-workspace-column">
+                  <div class="builder-canvas-toolbar"><span>Workspace</span><span class="builder-zoom"><button type="button" id="builder-zoom-out" aria-label="Zoom out">−</button><span id="builder-zoom-level">100%</span><button type="button" id="builder-zoom-in" aria-label="Zoom in">+</button></span></div>
+                  <div class="builder-workspace" id="bot-builder-workspace" aria-label="Bot strategy block workspace">
+                    <div class="builder-workspace-top"><span>EVEN / ODD STRATEGY</span><span id="builder-block-count">5 blocks</span></div>
+                    <div class="builder-stack" id="bot-builder-stack"></div>
+                  </div>
+                  <details class="bot-config" open>
+                    <summary>Strategy parameters <span>Configure purchase and stop conditions</span></summary>
+                    <div class="bot-controls">
+                      <div class="bot-field">
+                        <label class="field-label" for="bot-parity">Chosen contract</label>
+                        <div class="select-wrap"><select id="bot-parity"><option value="DIGITEVEN">Even</option><option value="DIGITODD">Odd</option></select><span>⌄</span></div>
+                      </div>
+                      <div class="bot-field">
+                        <label class="field-label" for="bot-stake">Stake per trade</label>
+                        <input class="bot-input" id="bot-stake" type="number" min="0.01" step="any" value="1" inputmode="decimal">
+                      </div>
+                      <div class="bot-field">
+                        <label class="field-label" for="bot-target">Stop at profit</label>
+                        <input class="bot-input" id="bot-target" type="number" min="0.01" step="any" value="5" inputmode="decimal">
+                      </div>
+                      <div class="bot-field">
+                        <label class="field-label" for="bot-loss-limit">Stop at loss</label>
+                        <input class="bot-input" id="bot-loss-limit" type="number" min="0.01" step="any" value="5" inputmode="decimal">
+                      </div>
+                      <div class="bot-field">
+                        <label class="field-label" for="bot-trade-limit">Maximum trades</label>
+                        <input class="bot-input" id="bot-trade-limit" type="number" min="1" max="500" step="1" value="20">
+                      </div>
+                      <div class="bot-field">
+                        <label class="field-label" for="bot-threshold">Minimum observed rate</label>
+                        <div class="bot-percent-input"><input class="bot-input" id="bot-threshold" type="number" min="50" max="99" step="1" value="55"><span>%</span></div>
+                      </div>
+                    </div>
+                  </details>
+                </div>
+                <aside class="bot-run-panel" aria-label="Bot run results">
+                  <div class="bot-run-top">
+                    <button class="bot-run-button" id="bot-start" type="button" disabled><span aria-hidden="true">▶</span>Run</button>
+                    <div class="bot-run-state"><strong class="bot-status" id="bot-status"><span class="status-dot"></span>Bot is not running</strong><span class="bot-run-progress"><i></i></span></div>
+                    <button class="bot-stop-button" id="bot-stop" type="button" disabled>Stop</button>
+                  </div>
+                  <div class="bot-output-tabs" role="tablist" aria-label="Bot output">
+                    <button class="selected" id="bot-tab-summary" type="button" role="tab" aria-selected="true" aria-controls="bot-output-summary" data-output-tab="summary">Summary</button>
+                    <button id="bot-tab-transactions" type="button" role="tab" aria-selected="false" aria-controls="bot-output-transactions" data-output-tab="transactions">Transactions</button>
+                    <button id="bot-tab-journal" type="button" role="tab" aria-selected="false" aria-controls="bot-output-journal" data-output-tab="journal">Journal</button>
+                  </div>
+                  <section class="bot-output-panel" id="bot-output-summary" role="tabpanel" aria-labelledby="bot-tab-summary">
+                    <div class="bot-summary" aria-live="polite">
+                      <div><span>Best observed market</span><strong id="bot-best-market">Scan to load tick history</strong></div>
+                      <div><span>Chosen digit frequency</span><strong id="bot-best-rate">—</strong></div>
+                      <div><span>Ticks analyzed</span><strong id="bot-sample-count">—</strong></div>
+                      <div><span>Bot session P&amp;L</span><strong id="bot-session-pnl">—</strong></div>
+                      <div><span>Contracts placed</span><strong id="bot-trade-count">0</strong></div>
+                      <div><span>Won / lost</span><strong id="bot-win-loss">0 / 0</strong></div>
+                    </div>
+                    <div class="bot-caution"><strong>Risk notice:</strong> Recent digit frequency does not predict the next tick. Automated trading can lose money. Profit and loss limits are checked after settlement; Stop does not cancel an open contract.</div>
+                  </section>
+                  <section class="bot-output-panel" id="bot-output-transactions" role="tabpanel" aria-labelledby="bot-tab-transactions" hidden>
+                    <div class="bot-table-head"><span>Market / contract</span><span>Stake</span><span>Result</span></div>
+                    <div class="bot-output-list" id="bot-transactions"><p class="builder-output-empty">Bot transactions will appear here.</p></div>
+                  </section>
+                  <section class="bot-output-panel" id="bot-output-journal" role="tabpanel" aria-labelledby="bot-tab-journal" hidden>
+                    <div class="bot-output-list bot-journal-list" id="bot-journal"><p class="builder-output-empty">Bot activity will appear here.</p></div>
+                  </section>
+                </aside>
+              </div>
+              <p class="bot-activity" id="bot-activity" role="status">Connect a Deriv account to start automated trading. Scanning is available without an account.</p>
+            </section>
+          </article>
+        </section>
+
+        <footer class="page-footer" id="history"><span>Live prices from Deriv public market feed</span><span>Options trading involves risk. Verify each order before confirming.</span></footer>
+      </div>
+    </main>
+  </div>
+  <dialog class="account-dialog" id="account-dialog" aria-labelledby="account-dialog-title">
+    <form method="dialog" class="dialog-close-form"><button class="dialog-close" aria-label="Close account settings">×</button></form>
+    <div class="dialog-icon">◉</div>
+    <h2 id="account-dialog-title">Secure Deriv login</h2>
+    <p class="dialog-copy">APEX never asks for or stores your Deriv email or password. Deriv OAuth login needs a registered OAuth client and an exact callback URL; those are not configured yet. For now, you can connect with a short-lived URL generated by Deriv's authenticated flow.</p>
+    <label class="field-label" for="account-type-select">Account type</label>
+    <div class="select-wrap"><select id="account-type-select"><option value="demo">Deriv demo</option><option value="real">Deriv real (live funds)</option></select><span>⌄</span></div>
+    <label class="field-label" for="otp-url">One-time WebSocket URL</label>
+    <input class="otp-input" id="otp-url" type="password" autocomplete="off" spellcheck="false" placeholder="wss://api.derivws.com/trading/v1/options/ws/demo?otp=…" required>
+    <p class="otp-warning"><strong>Never paste your password or long-lived API token here.</strong> A real-account connection can place actual trades. Bot orders run automatically after you review and confirm the bot's risk limits; keep the page open while it runs.</p>
+    <div class="dialog-actions">
+      <button class="button button-outline" id="disconnect-account" type="button">Disconnect</button>
+      <button class="button connect-button" id="connect-account" type="button">Connect account</button>
+    </div>
+    <a class="docs-link" href="https://developers.deriv.com/docs/intro/authentication/" target="_blank" rel="noopener noreferrer">Deriv authentication guide ↗</a>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
